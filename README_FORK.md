@@ -4,4 +4,3 @@ Forked from https://github.com/gogits/gogs
 
 Modified to generate an armhf Docker build automatically.
 
-
