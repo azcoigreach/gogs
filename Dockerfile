@@ -1,7 +1,7 @@
-FROM alpine:3.5
+FROM armhf/alpine:3.5
 
 # Install system utils & Gogs runtime dependencies
-ADD https://github.com/tianon/gosu/releases/download/1.9/gosu-amd64 /usr/sbin/gosu
+ADD https://github.com/tianon/gosu/releases/download/1.9/gosu-armhf /usr/sbin/gosu
 RUN chmod +x /usr/sbin/gosu \
  && apk --no-cache --no-progress add ca-certificates bash git linux-pam s6 curl openssh socat tzdata
 
